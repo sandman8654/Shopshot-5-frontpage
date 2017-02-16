@@ -1,0 +1,1 @@
+# Shopshot-5-frontpage
