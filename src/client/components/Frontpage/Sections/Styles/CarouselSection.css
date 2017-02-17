@@ -1,0 +1,23 @@
+.slider-container {
+    margin: 0 auto;
+    padding: 40px;
+    color: #333;
+    background: #FFF;
+}
+
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.swipe-wrap>div {
+    float: left;
+    width: 100%;
+    position: relative;
+}

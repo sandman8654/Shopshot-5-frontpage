@@ -1,0 +1,1 @@
+follow [our contributing guidelines](https://gitlab.com/thrifa/thrifa-general/blob/master/contributing.md)

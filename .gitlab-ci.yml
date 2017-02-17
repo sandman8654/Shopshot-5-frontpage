@@ -1,0 +1,31 @@
+image: node:6.5.0
+
+
+cache:
+  paths:
+  - node_modules/
+
+services:
+  - mongo:latest
+  
+stages:
+  - test
+  - deploy
+
+staging:
+  stage: test
+  image: ruby:latest
+  script:
+   - gem install dpl
+   - dpl --provider=heroku --app=shopshots-dev --api-key=$HEROKU_STAGING_API_KEY
+  environment:
+    name: development
+
+production:
+  stage: deploy
+  image: ruby:latest
+  script:
+   - gem install dpl
+   - dpl --provider=heroku --app=shopshots --api-key=$HEROKU_STAGING_API_KEY
+  only:
+   - master
