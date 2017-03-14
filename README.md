@@ -1,4 +1,4 @@
-# Keystone-React-Redux template for Thrifa MERN projects.
+# Keystone-React-Redux for MERN projects.
 
 This package uses Webpack and Babel to run Keystone, React and Redux.
 
